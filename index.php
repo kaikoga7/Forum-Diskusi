@@ -42,8 +42,7 @@
             <div class="login-box ptb--100">
                 <form method="post">
                     <div class="login-form-head">
-                        <h4>PROJECT UAS</h4>
-                        <p>Sign In</p>
+                        <h4>Login</h4>
                     </div>
                     <div class="login-form-body">
                         <div class="form-gp">
