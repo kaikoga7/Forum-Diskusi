@@ -43,6 +43,13 @@
                 <form method="post">
                     <div class="login-form-head">
                         <h4>Login</h4>
+                        <?php  If(isset($_GET['error']) && $_GET['error'] == 1){ ?>
+                                    <div class="alert alert-danger alert-dismissible">
+									<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+									<strong>Nim atau Password Salah</strong>  
+									</div>    
+                        <?php } 
+                        ?>
                     </div>
                     <div class="login-form-body">
                         <div class="form-gp">
@@ -68,8 +75,8 @@
                 </form>
                  <?php if(isset($_POST['login'])) {
 
-                        $nim = $_POST['nim'];
-                        $pass = md5($_POST['pass']);
+                        $nim = mysqli_real_escape_string($koneksi, $_POST['nim']);
+                        $pass = mysqli_real_escape_string($koneksi, md5($_POST['pass']));
 
                         $login = mysqli_query($koneksi, "select * from user where nim='$nim' and password='$pass'");
                         $cek = mysqli_num_rows($login);
@@ -80,7 +87,7 @@
                             $_SESSION['status'] = "login";
                             header("location:admin/index.php");
                         }else{
-                            header("location:index.php");
+                            header("location:index.php?error=1");
                         }
                     }
                 ?>
