@@ -22,7 +22,7 @@ date_default_timezone_set('Asia/Kuala_Lumpur');
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Home - Project UAS </title>
+    <title>Home - Yuk Diskusi </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="../assets/images/icon/favicon.ico">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
@@ -53,7 +53,7 @@ date_default_timezone_set('Asia/Kuala_Lumpur');
                 <div class="row align-items-center">
                     <div class="col-sm-6">
                         <div class="breadcrumbs-area clearfix">
-                            <h4 class="page-title pull-left">Project UAS</h4>
+                            <h4 class="page-title pull-left">Yuk Diskusi</h4>
                         </div>
                     </div>
                     <div class="col-sm-6 clearfix">
@@ -77,7 +77,7 @@ date_default_timezone_set('Asia/Kuala_Lumpur');
                    <div class="row align-items-center">
                     <div class="col-sm-6">
                         <div class="breadcrumbs-area clearfix">
-                            <h6 class="page-title pull-left">Welcome <?php echo "$tampil[fullname]"; ?></h6>
+                            <h6 class="page-title pull-left">Selamat datang, <?php echo "$tampil[fullname]"; ?></h6>
                         </div>
                     </div>
                     <div class="col-sm-6">
@@ -93,7 +93,7 @@ date_default_timezone_set('Asia/Kuala_Lumpur');
                  <div class="col-12">
                     <div class="card mt-5">
                         <div class="card-body">
-                            <h4 class="header-title">New Massages</h4>
+                            <h4 class="header-title">Pesan Baru</h4>
                                 <form method="post">
                                     <div class="input-group mb-3">
                                         <textarea class="form-control" aria-label="With textarea" name="msg"></textarea>
@@ -144,15 +144,15 @@ date_default_timezone_set('Asia/Kuala_Lumpur');
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="header-title">Messages Data</h4>
+                                <h4 class="header-title">Data Pesan</h4>
                                 <div class="single-table">
                                     <div class="table-responsive">
                                         <table class="table text-center">
                                             <thead class="text-uppercase bg-primary">
                                                 <tr class="text-white">
-                                                    <th scope="col" width="50px">Date Time</th>
-                                                    <th scope="col" width="50px">Sender</th>
-                                                    <th scope="col" width="300px">Massage</th>
+                                                    <th scope="col" width="50px">Tanggal</th>
+                                                    <th scope="col" width="50px">Pengirim</th>
+                                                    <th scope="col" width="300px">Pesan</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
